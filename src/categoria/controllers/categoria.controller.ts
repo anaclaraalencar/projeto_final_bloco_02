@@ -28,8 +28,8 @@ export class CategoriaController {
 
   @Post('/cadastrar')
   @HttpCode(HttpStatus.CREATED)
-  create(@Body() categoria: Categoria): Promise<Categoria> {
-    return this.categoriaService.post(categoria);
+  create(@Body() tipo: Categoria): Promise<Categoria> {
+    return this.categoriaService.post(tipo);
   }
 
   @Put('/atualizar')
